@@ -1,0 +1,22 @@
+.RecipeListPage {
+  background-color: hsl(195, 100%, 82%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(218, 100%, 35%);
+}
+
+.RecipeListPage .RecipeSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vh;
+  margin-bottom: 3vh;
+}
+
+@media (max-width: 600px) {
+  .RecipeListPage .RecipeSection {
+    display: flex;
+    flex-direction: column;
+  }
+}

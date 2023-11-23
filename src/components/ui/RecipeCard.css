@@ -1,0 +1,125 @@
+.RecipeCard {
+  text-align: center;
+  width: 30vw;
+  border-width: 2px;
+  border-color: hsl(0, 2%, 0%);
+  border-radius: 5px 5px 5px 5px;
+}
+
+.Image {
+  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.HeaderTwo {
+  font-size: 1.25vw;
+  font-weight: bold;
+  padding: 1vw 1vw 1vw 1vw;
+}
+
+.RecipeInfo {
+  background-color: hsl(218, 100%, 100%);
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+  height: 32vh;
+}
+
+.RecipeInfo .Meal .MealType {
+  color: hsl(218, 3%, 60%);
+}
+
+.RecipeInfo .OtherInformation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.RecipeInfo .OtherInformation .VeganOrVegetarian {
+  background-color: hsl(276, 79%, 82%);
+  padding: 0px 5px 0px 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.RecipeInfo .OtherInformation .DietLabels {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+.RecipeInfo .OtherInformation .DietLabels li {
+  list-style-type: none;
+  background-color: hsl(110, 48%, 71%);
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+}
+
+.RecipeInfo .OtherInformation .Cautions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3px;
+}
+
+.RecipeInfo .OtherInformation .Cautions li {
+  list-style-type: none;
+  font-weight: bold;
+  background-color: hsl(0, 82%, 77%);
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+}
+
+.RecipeInfo .OtherInformation .DishType {
+  background-color: hsl(195, 100%, 82%);
+  border-radius: 5px;
+  padding: 0px 5px 0px 5px;
+}
+
+@media (max-width: 600px) {
+  .RecipeCard {
+    text-align: center;
+    width: 80vw;
+    border-width: 2px;
+    border-color: hsl(0, 2%, 0%);
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .RecipeInfo .Meal .MealType {
+    font-size: 2vw;
+    margin-top: 1px;
+  }
+
+  .RecipeInfo .Meal .HeaderTwo {
+    font-size: 2vw;
+  }
+
+  .RecipeInfo .OtherInformation .VeganOrVegetarian {
+    font-size: 2vw;
+  }
+
+  .RecipeInfo .OtherInformation .DietLabels {
+    font-size: 2vw;
+  }
+
+  .RecipeInfo .OtherInformation .DishType {
+    font-size: 2vw;
+  }
+
+  .RecipeInfo .OtherInformation .Cautions {
+    font-size: 2vw;
+  }
+
+  .HeaderTwo {
+    font-size: 1.5vw;
+  }
+}

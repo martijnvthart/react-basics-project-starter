@@ -1,0 +1,205 @@
+.SingleRecipePage {
+  width: 90%;
+  margin: 2% 0px 2% 0px;
+}
+
+.Recipe {
+  border-radius: 10px 10px 0px 0px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  grid-area: banner;
+}
+
+.BackButton {
+  text-align: center;
+  background-color: hsl(0, 100%, 100%);
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 3vh;
+}
+
+.SingleRecipeImage {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
+  height: 50vh;
+  grid-area: picture;
+  border-style: solid;
+  border-width: 2px;
+  border-color: hsl(0, 2%, 0%);
+}
+
+.SingleRecipeInfoLeft {
+  background-color: hsl(0, 100%, 100%);
+  width: auto;
+  height: auto;
+  padding-left: 15px;
+  grid-area: infoLeft;
+  border-radius: 0px 0px 0px 5px;
+  border-left-width: 2px;
+  border-bottom-width: 2px;
+  border-color: hsl(0, 2%, 0%);
+  border-style: solid;
+}
+
+.SingleRecipeInfoLeft h2 {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.SingleRecipeInfoLeft .Ingredients {
+  margin-bottom: 5px;
+}
+
+.SingleRecipeInfoLeft .Ingredients li {
+  list-style-type: none;
+}
+
+.SingleRecipeInfoRight {
+  background-color: hsl(0, 100%, 100%);
+  width: auto;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-area: infoRight;
+  border-radius: 0px 0px 5px 0px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-color: hsl(0, 2%, 0%);
+  border-style: solid;
+}
+
+.SingleRecipeInfoRight .HealthLabelList {
+  width: auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-right: 5px;
+}
+
+.SingleRecipeInfoRight .HealthLabelList li {
+  background-color: hsl(276, 79%, 82%);
+  border-radius: 5px;
+  padding: 0px 5px 0px 5px;
+}
+
+.SingleRecipeInfoRight .DietLabels {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.SingleRecipeInfoRight .DietLabels li {
+  list-style-type: none;
+  background-color: hsl(110, 48%, 71%);
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+}
+
+.SingleRecipeInfoRight .CautionList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.SingleRecipeInfoRight .CautionList li {
+  list-style-type: none;
+  background-color: hsl(0, 82%, 77%);
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+}
+.SingleRecipeInfoRight .NutrientList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.SingleRecipeInfoRight .NutrientList li {
+  display: inline-block;
+  list-style-type: none;
+  background-color: hsl(52, 100%, 82%);
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+.MealType {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.DishType {
+  margin-bottom: 10px;
+}
+
+.DietHeader {
+  font-weight: bold;
+  margin-top: 5px;
+}
+.HealthLabelsHeader {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.CautionsHeader {
+  font-weight: bold;
+}
+
+.TotalNutrientsHeader {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .SingleRecipeImage {
+    border-width: 0px;
+  }
+
+  .SingleRecipeInfoLeft {
+    border-width: 0px;
+  }
+
+  .SingleRecipeInfoRight {
+    border-width: 0px;
+  }
+
+  .SingleRecipeInfoLeft h2 {
+    font-size: 5vw;
+  }
+
+  .SingleRecipeInfoRight .NutrientList li {
+    font-size: small;
+  }
+
+  .BackButton {
+    font-size: medium;
+  }
+  .SingleRecipeInfoRight .HealthLabelList {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .SingleRecipePage {
+    width: 65vw;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 13vh 300px auto 8vh;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "banner banner" "picture picture" "infoLeft infoRight";
+  }
+}
